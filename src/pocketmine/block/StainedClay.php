@@ -100,7 +100,7 @@ class StainedClay extends Solid {
 	 * @return array
 	 */
 	public function getDrops(Item $item) : array{
-		if($item->isPickaxe()>=1){
+		if($item->isPickaxe()){
 			return [
 				[Item::STAINED_CLAY,$this->meta & 0x0f,1],
 			];

@@ -63,9 +63,9 @@ class HardenedClay extends Solid {
 	 * @return array
 	 */
 	public function getDrops(Item $item) : array{
-		if($item->isPickaxe()>=1){
+		if($item->isPickaxe()){
 			return [
-				[Item::HARDENED_CLAY,0,1],
+				[Item::HARDENED_CLAY,$this->meta,1],
 			];
 		}else{
 			return [];
